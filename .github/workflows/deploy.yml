@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
+      - dev
       - testing
       - main
 
@@ -12,16 +13,31 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensure full history for merging
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge dev into testing
+        run: |
+          git fetch origin
+          git checkout testing
+          git merge origin/dev --no-edit || echo "No changes to merge"
+          git push origin testing
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: . # Publish the entire repo
-      - name: Push changes
+          publish_dir: . # Deploy everything
+
+      - name: Push changes to main branch
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git push https://x-access-token:${{ secrets.PAT }}@github.com/AcharyaAkshaya/exp-forging.git HEAD:testing
+          git checkout main
+          git merge testing --no-edit || echo "No changes to merge"
+          git push origin main
