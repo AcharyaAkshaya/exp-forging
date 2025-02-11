@@ -15,32 +15,25 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Ensure full history for merging
+          fetch-depth: 0 # Ensure full Git history
 
-      - name: Debug Git Repository
+      - name: Verify Git Repository
         run: |
-          pwd
-          ls -la
-          git status || echo "No Git repository found!"
+          if [ ! -d .git ]; then
+            echo "❌ Git repository not found. Initializing..."
+            git init
+            git remote add origin https://github.com/AcharyaAkshaya/exp-forging.git
+            git fetch origin
+          fi
 
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Ensure Git is Initialized
-        run: |
-          if [ ! -d .git ]; then
-            echo "Git repository not found. Initializing..."
-            git init
-            git remote add origin https://github.com/AcharyaAkshaya/exp-forging.git
-            git fetch origin
-            git checkout testing
-          fi
-
       - name: Merge dev into testing
         run: |
-          git checkout testing
+          git checkout testing || git checkout -b testing origin/testing
           git merge origin/dev --no-edit || echo "No changes to merge"
           git push origin testing
 
@@ -53,6 +46,6 @@ jobs:
 
       - name: Merge testing into main
         run: |
-          git checkout main
+          git checkout main || git checkout -b main origin/main
           git merge origin/testing --no-edit || echo "No changes to merge"
           git push origin main
