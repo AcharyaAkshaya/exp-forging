@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Shaping of metal by squeezing them in between two or more dies in order to obtain the desire shape is done by?",
+      "answers": {
+        "a": "Forging",
+        "b": "Welding",
+        "c": "Forming",
+        "d": "Grinding"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Forging is carried out at which temperature?",
+      "answers": {
+        "a": "Below recrystallization temperature",
+        "b": "Above recrystallization temperature",
+        "c": "Below or above the recrystallization temperature",
+        "d": "Above melting point"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In which of the following forging process poor material utilization occurs?",
+      "answers": {
+        "a": "Open die",
+        "b": "Closed die",
+        "c": "Impression die",
+        "d": "Hold die"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which type of forging is done by deforming the metal at room temperature?",
+      "answers": {
+        "a": "Open die forging",
+        "b": "Cold forging",
+        "c": "Hot forging",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The height of the final product after the forging process will be:",
+      "answers": {
+        "a": "Less than that of the original workpiece",
+        "b": "Greater than that of the original workpiece",
+        "c": "Same that of the original workpiece",
+        "d": "unpredictable"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    }
+  ]
+}
