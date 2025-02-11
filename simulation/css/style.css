@@ -1,0 +1,781 @@
+.main-container {
+  /* min-height: 100vh; */
+  overflow: hidden;
+}
+.title-div-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-container-clr);
+  z-index: 105;
+  position: relative;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.title-div {
+  display: flex;
+  gap: 5rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background2),
+    var(--clr-side-background3)
+  );
+  border-radius: 1rem;
+  z-index: 105;
+  position: relative;
+}
+
+.logo-div {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+h1 {
+  flex: 0 0 1;
+  display: inline-block;
+  align-self: center;
+  margin: auto;
+}
+
+.title-div h1 {
+  justify-self: center;
+  font-size: 3.2rem;
+  color: var(--clr-text-clr);
+  text-transform: uppercase;
+}
+
+.logo-div {
+  padding: 0.5rem 0;
+  width: 6rem;
+}
+
+.logo {
+  width: 100%;
+}
+
+/* ****************** */
+/* *****CONTAINER******* */
+/* ****************** */
+.container {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-container-clr);
+  height: 100%;
+  /* max-height: 100%; */
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+/* ****************** */
+/* *****MAIN******* */
+/* ****************** */
+.main {
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  border: 0.1rem solid var(--clr-side-background2);
+  overflow: hidden;
+}
+/* 
+.simsubscreen {
+  height: 100vh;
+} */
+
+.nav {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#nextButton,
+#reButton {
+  justify-self: flex-end;
+  grid-column: 2/3;
+}
+
+#prevButton {
+  justify-self: flex-start;
+  grid-column: 1/2;
+}
+
+.footer {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  grid-column: 1/-1;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background3),
+    var(--clr-side-background2)
+  );
+  color: var(--clr-text-clr);
+  border-radius: 0.5rem;
+}
+
+.step-div {
+  display: flex;
+  align-items: center;
+}
+.incanvas {
+  font-weight: 900;
+  color: var(--clr-side-background2);
+}
+
+.circlebg {
+  background-color: var(--clr-side-background2);
+  color: #fff;
+  width: 3rem;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  margin-right: 1rem;
+}
+
+/* canvas settings */
+/***********************
+******* Canvas 0 Start*******
+************************
+*/
+.hide {
+  display: none;
+}
+.display-flex {
+  display: flex;
+}
+.display-block {
+  display: block;
+}
+.simsubscreen {
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100%;
+  position: relative;
+}
+
+.apparatus-images {
+  margin-top: 1rem;
+  position: relative;
+  height: 50vh;
+}
+
+.appratus-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.wp0 {
+  position: absolute;
+  left: 1.12%;
+  top: 49.32%;
+  width: 6.74%;
+  height: 37.7%;
+}
+.p0 {
+  position: absolute;
+  left: 52.81%;
+  top: 7.88%;
+  width: 24.72%;
+  height: 80.16%;
+}
+.m0 {
+  position: absolute;
+  left: 52.81%;
+  top: 6.68%;
+  width: 24.72%;
+  height: 80.16%;
+}
+.h0 {
+  position: absolute;
+  left: 15.73%;
+  top: 66.54%;
+  width: 13.48%;
+  height: 18.96%;
+}
+.g0 {
+  position: absolute;
+  left: 32.58%;
+  top: 61.43%;
+  width: 16.85%;
+  height: 24.32%;
+}
+.off0 {
+  position: absolute;
+  left: 73.37%;
+  top: 46.99%;
+  width: 3.37%;
+  height: 10.21%;
+}
+
+/***********************
+******* Canvas 0 End*******
+************************
+*/
+
+/*
+**********************
+******* Canvas 1 Start*******
+************************
+*/
+.p1 {
+  position: absolute;
+  left: 54.38%;
+  top: 49.91%;
+  width: 22.47%;
+  height: 18.19%;
+}
+.wp1 {
+  position: absolute;
+  left: 7.87%;
+  top: 55.46%;
+  width: 5.62%;
+  height: 20.42%;
+  cursor: pointer;
+}
+.hp1 {
+  position: absolute;
+  left: 56.74%;
+  top: 49.91%;
+  width: 5.62%;
+  height: 20.42%;
+}
+.h1 {
+  position: absolute;
+  left: 54.38%;
+  top: 49.91%;
+  width: 22.47%;
+  height: 18.19%;
+}
+
+/***********************
+******* Canvas 1 End *******
+************************
+*/
+
+/***********************
+******* Canvas 2 Start*******
+************************
+*/
+.p2 {
+  position: absolute;
+  left: 39.33%;
+  top: 22.18%;
+  width: 33.71%;
+  height: 71.05%;
+}
+.m2 {
+  position: absolute;
+  left: 39.33%;
+  top: 22.18%;
+  width: 33.71%;
+  height: 71.05%;
+}
+.wp2 {
+  position: absolute;
+  left: 5.62%;
+  top: 70.25%;
+  width: 3.37%;
+  height: 12.25%;
+  cursor: pointer;
+}
+.off2 {
+  position: absolute;
+  left: 67.42%;
+  top: 58.23%;
+  width: 4.49%;
+  height: 8.85%;
+}
+
+/***********************
+******* Canvas 2 End*******
+************************
+*/
+
+/***********************
+******* Canvas 3 Start*******
+************************
+*/
+.m3 {
+  position: absolute;
+  left: 39.33%;
+  top: 22.18%;
+  width: 33.71%;
+  height: 71.05%;
+}
+.left3 {
+  position: absolute;
+  left: 53.82%;
+  top: 60.08%;
+  width: 3.37%;
+  height: 7.19%;
+}
+.right3 {
+  position: absolute;
+  left: 51.57%;
+  top: 60.08%;
+  width: 3.37%;
+  height: 7.19%;
+}
+.wp3 {
+  position: absolute;
+  left: 53.03%;
+  top: 56.94%;
+  width: 2.81%;
+  height: 10.21%;
+}
+.fp3 {
+  position: absolute;
+  left: 52.7%;
+  top: 59.89%;
+  width: 3.37%;
+  height: 7.19%;
+}
+.p3 {
+  position: absolute;
+  left: 39.33%;
+  top: 22.18%;
+  width: 33.71%;
+  height: 71.05%;
+}
+.mp3 {
+  position: absolute;
+  left: 39.33%;
+  top: 22.18%;
+  width: 33.71%;
+  height: 71.05%;
+}
+.off3 {
+  position: absolute;
+  left: 67.42%;
+  top: 58.23%;
+  width: 4.49%;
+  height: 8.85%;
+
+  cursor: pointer;
+}
+.on3 {
+  position: absolute;
+  left: 67.42%;
+  top: 58.23%;
+  width: 4.49%;
+  height: 8.85%;
+}
+
+/***********************
+******* Canvas 3 End*******
+************************
+*/
+
+/***********************
+******* Canvas 4 Start*******
+************************
+*/
+.p4 {
+  position: absolute;
+  left: 39.33%;
+  top: 22.18%;
+  width: 33.71%;
+  height: 71.05%;
+}
+.m4 {
+  position: absolute;
+  left: 39.33%;
+  top: 22.18%;
+  width: 33.71%;
+  height: 71.05%;
+}
+.wp4 {
+  position: absolute;
+  left: 52.25%;
+  top: 60.08%;
+  width: 3.37%;
+  height: 7.19%;
+  cursor: pointer;
+}
+.fp4 {
+  position: absolute;
+  left: 10.56%;
+  top: 53.79%;
+  width: 5.06%;
+  height: 10.78%;
+}
+.off4 {
+  position: absolute;
+  left: 67.42%;
+  top: 58.23%;
+  width: 4.49%;
+  height: 8.85%;
+}
+
+/***********************
+******* Canvas 5 start*******
+************************
+*/
+.wp5 {
+  position: absolute;
+  left: 10.56%;
+  top: 53.79%;
+  width: 8.99%;
+  height: 19.17%;
+}
+.fp5 {
+  position: absolute;
+  left: 10.56%;
+  top: 53.79%;
+  width: 8.99%;
+  height: 19.17%;
+}
+.gr5 {
+  position: absolute;
+  left: 57.3%;
+  top: 47.14%;
+  width: 17.98%;
+  height: 16.86%;
+  cursor: pointer;
+}
+
+/***********************
+******* Canvas 5 End*******
+************************
+*/
+
+/***********************
+******* Animations *******
+************************
+*/
+
+@keyframes movePattern {
+  0% {
+    left: 7.87%;
+    top: 55.46%;
+  }
+  20% {
+    left: 7.87%;
+    top: 18.49%;
+  }
+  70% {
+    left: 56.74%;
+    top: 18.49%;
+  }
+  100% {
+    left: 56.74%;
+    top: 49.91%;
+  }
+}
+@-webkit-keyframes movePattern {
+  0% {
+    left: 7.87%;
+    top: 55.46%;
+  }
+  20% {
+    left: 7.87%;
+    top: 18.49%;
+  }
+  70% {
+    left: 56.74%;
+    top: 18.49%;
+  }
+  100% {
+    left: 56.74%;
+    top: 49.91%;
+  }
+}
+
+@keyframes movePattern2 {
+  0% {
+    left: 5.62%;
+    top: 70.25%;
+  }
+  20% {
+    left: 5.62%;
+    top: 51.76%;
+  }
+  70% {
+    left: 44.94%;
+    top: 51.76%;
+    transform: scale(1);
+  }
+  100% {
+    left: 52.81%;
+    top: 56.01%;
+    transform: scale(0.834);
+  }
+}
+@-webkit-keyframes movePattern2 {
+  0% {
+    left: 5.62%;
+    top: 70.25%;
+  }
+  20% {
+    left: 5.62%;
+    top: 51.76%;
+  }
+  70% {
+    left: 44.94%;
+    top: 51.76%;
+    transform: scale(1);
+  }
+  100% {
+    left: 52.81%;
+    top: 56.01%;
+    transform: scale(0.834);
+  }
+}
+
+@keyframes movepress3 {
+  0% {
+    left: 39.33%;
+    top: 22.18%;
+  }
+  10% {
+    left: 39.33%;
+    top: 25.88%;
+  }
+  20% {
+    left: 39.33%;
+    top: 28.65%;
+  }
+  40% {
+    left: 39.33%;
+    top: 30.87%;
+  }
+  60% {
+    left: 39.33%;
+    top: 30.87%;
+  }
+  80% {
+    left: 39.33%;
+    top: 28.65%;
+  }
+  100% {
+    left: 39.33%;
+    top: 22.18%;
+  }
+}
+@-webkit-keyframes movepress3 {
+  0% {
+    left: 39.33%;
+    top: 22.18%;
+  }
+  10% {
+    left: 39.33%;
+    top: 25.88%;
+  }
+  20% {
+    left: 39.33%;
+    top: 28.65%;
+  }
+  40% {
+    left: 39.33%;
+    top: 30.87%;
+  }
+  60% {
+    left: 39.33%;
+    top: 30.87%;
+  }
+  80% {
+    left: 39.33%;
+    top: 28.65%;
+  }
+  100% {
+    left: 39.33%;
+    top: 22.18%;
+  }
+}
+
+@keyframes moveleft {
+  0% {
+    left: 53.82%;
+    top: 60.08%;
+  }
+  15% {
+    left: 53.82%;
+    top: 60.08%;
+  }
+  45% {
+    left: 52.58%;
+    top: 59.89%;
+  }
+  100% {
+    left: 52.58%;
+    top: 59.89%;
+  }
+}
+@-webkit-keyframes moveleft {
+  0% {
+    left: 53.82%;
+    top: 60.08%;
+  }
+  15% {
+    left: 53.82%;
+    top: 60.08%;
+  }
+  45% {
+    left: 52.58%;
+    top: 59.89%;
+  }
+  100% {
+    left: 52.58%;
+    top: 59.89%;
+  }
+}
+
+@keyframes moveright {
+  0% {
+    left: 51.57%;
+    top: 60.08%;
+  }
+  15% {
+    left: 51.57%;
+    top: 60.08%;
+  }
+  45% {
+    left: 52.81%;
+    top: 59.89%;
+  }
+  100% {
+    left: 52.81%;
+    top: 59.89%;
+  }
+}
+@-webkit-keyframes moveright {
+  0% {
+    left: 51.57%;
+    top: 60.08%;
+  }
+  15% {
+    left: 51.57%;
+    top: 60.08%;
+  }
+  45% {
+    left: 52.81%;
+    top: 59.89%;
+  }
+  100% {
+    left: 52.81%;
+    top: 59.89%;
+  }
+}
+
+@keyframes movePattern4 {
+  0% {
+    left: 52.25%;
+    top: 60.08%;
+  }
+  20% {
+    left: 48.31%;
+    top: 55.46%;
+    transform: scale(1);
+  }
+  100% {
+    left: 11.24%;
+    top: 55.46%;
+    transform: scale(1.5);
+  }
+}
+@-webkit-keyframes movePattern4 {
+  0% {
+    left: 52.25%;
+    top: 60.08%;
+  }
+  20% {
+    left: 48.31%;
+    top: 55.46%;
+    transform: scale(1);
+  }
+  100% {
+    left: 11.24%;
+    top: 55.46%;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes movegr {
+  0% {
+    left: 57.3%;
+    top: 47.14%;
+  }
+  10% {
+    left: 57.3%;
+    top: 29.58%;
+  }
+  25% {
+    left: 20.22%;
+    top: 29.58%;
+  }
+  35% {
+    left: 10.11%;
+    top: 38.82%;
+  }
+  45% {
+    left: 14.61%;
+    top: 39.19%;
+  }
+  55% {
+    left: 10.56%;
+    top: 39.56%;
+  }
+  65% {
+    left: 14.04%;
+    top: 40.11%;
+  }
+  80% {
+    left: 20.22%;
+    top: 29.58%;
+  }
+  100% {
+    left: 57.3%;
+    top: 29.58%;
+  }
+}
+@-webkit-keyframes movegr {
+  0% {
+    left: 57.3%;
+    top: 47.14%;
+  }
+  10% {
+    left: 57.3%;
+    top: 29.58%;
+  }
+  25% {
+    left: 20.22%;
+    top: 29.58%;
+  }
+  35% {
+    left: 10.11%;
+    top: 38.82%;
+  }
+  45% {
+    left: 14.61%;
+    top: 39.19%;
+  }
+  55% {
+    left: 10.56%;
+    top: 39.56%;
+  }
+  65% {
+    left: 14.04%;
+    top: 40.11%;
+  }
+  80% {
+    left: 20.22%;
+    top: 29.58%;
+  }
+  100% {
+    left: 57.3%;
+    top: 29.58%;
+  }
+}

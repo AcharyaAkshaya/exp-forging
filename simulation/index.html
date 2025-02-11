@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE - Manufacturing Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+    <script defer src="js/script1.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="title-div-container">
+        <div class="title-div">
+          <div class="logo-div">
+            <a href="#"
+              ><img src="images/logo_nitk.png" alt="Logo" class="logo"
+            /></a>
+          </div>
+          <h1>Forging</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main">
+          <div class="simsubscreen canvas0 display-flex" id="canvas0">
+            <h3>Objective:</h3>
+            <p>To demonstrate the open die Forging operation.</p>
+            <h3>Apparatus Used:</h3>
+            <p>Hydraulic press, Heater, workpiece, grinder etc.</p>
+            <div class="apparatus-images">
+              <div class="apparatus-wrapper">
+                <img
+                  id="wp0"
+                  title="Workpiece"
+                  src="./images/p.png"
+                  class="wp0"
+                />
+                <img id="p0" title="" src="./images/press.png" class="p0" />
+                <img
+                  id="m0"
+                  title="Hydraulic Press"
+                  src="./images/machine.png"
+                  class="m0"
+                />
+                <img
+                  id="h0"
+                  title="Heater"
+                  src="./images/heat1.png"
+                  class="h0"
+                />
+                <img
+                  id="g0"
+                  title="Grinder"
+                  src="./images/grinder.png"
+                  class="g0"
+                />
+                <img
+                  id="off0"
+                  title="Hydraulic press"
+                  src="./images/OFF.png"
+                  class="off0"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="simsubscreen canvas1 hide" id="canvas1">
+            <div class="step-div">
+              <p id="pumptext" class="step-text">
+                <span id="titlestep" class="incanvas">STEP </span>
+                <span class="circlebg" id="stepnumber">1</span>Heat the
+                workpiece to required temperature.
+              </p>
+            </div>
+            <img
+              id="p1"
+              title="Induction Heater"
+              src="./images/heat2.png"
+              class="p1"
+            />
+            <img id="wp1" title="Workpiece" src="./images/p.png" class="wp1" />
+            <img
+              id="hp1"
+              title="Workpiece"
+              src="./images/p1.png"
+              class="hp1 hide"
+            />
+            <img
+              id="h1"
+              title="Induction Heater"
+              src="./images/heat.png"
+              class="h1"
+            />
+          </div>
+          <div class="simsubscreen canvas2 hide" id="canvas2">
+            <div class="step-div">
+              <p id="pumptext" class="step-text">
+                <span id="titlestep" class="incanvas">STEP </span>
+                <span class="circlebg" id="stepnumber">2</span>Set the hot
+                workpiece in the forging machine.
+              </p>
+            </div>
+            <img
+              id="p2"
+              title="Hydraulic Press"
+              src="./images/press.png"
+              class="p2"
+            />
+            <img
+              id="m2"
+              title="Hydraulic Press"
+              src="./images/machine.png"
+              class="m2"
+            />
+            <img
+              id="wp2"
+              title="Hot workpiece"
+              src="./images/p1.png"
+              class="wp2"
+            />
+            <img
+              id="off2"
+              title="Hydraulic press"
+              src="./images/OFF.png"
+              class="off2"
+            />
+          </div>
+
+          <div class="simsubscreen canvas3 hide" id="canvas3">
+            <div class="step-div">
+              <p id="pumptext" class="step-text">
+                <span id="titlestep" class="incanvas">STEP </span>
+                <span class="circlebg" id="stepnumber">3</span>Apply force on
+                the workpiece to forge it.
+              </p>
+            </div>
+            <img
+              id="m3"
+              title="Hydraulic Press"
+              src="./images/machine.png"
+              class="m3"
+            />
+            <img id="left3" title="" src="./images/left.png" class="left3" />
+            <img id="right3" title="" src="./images/right.png" class="right3" />
+            <img
+              id="wp3"
+              title="Hot workpiece"
+              src="./images/p1.png"
+              class="wp3"
+            />
+            <img
+              id="fp3"
+              title="Hot workpiece"
+              src="./images/f1.png"
+              class="fp3 hide"
+            />
+            <img
+              id="p3"
+              title="Hydraulic Press"
+              src="./images/press.png"
+              class="p3"
+            />
+            <img
+              id="mp3"
+              title="Hydraulic Press"
+              src="./images/machinepart.png"
+              class="mp3"
+            />
+            <img
+              id="off3"
+              title="Hydraulic press"
+              src="./images/OFF.png"
+              class="off3"
+            />
+            <img
+              id="on3"
+              title="Hydraulic press"
+              src="./images/ON.png"
+              class="on3 hide"
+            />
+          </div>
+          <div class="simsubscreen canvas4 hide" id="canvas4">
+            <div class="step-div">
+              <p id="pumptext" class="step-text">
+                <span id="titlestep" class="incanvas">STEP </span>
+                <span class="circlebg" id="stepnumber">4</span>Remove the forged
+                workpiece and allow it to cool.
+              </p>
+            </div>
+            <img
+              id="p4"
+              title="Hydraulic Press"
+              src="./images/press.png"
+              class="p4"
+            />
+            <img
+              id="m4"
+              title="Hydraulic Press"
+              src="./images/machine.png"
+              class="m4"
+            />
+            <img
+              id="wp4"
+              title="Forged workpiece"
+              src="./images/f1.png"
+              class="wp4"
+            />
+            <img
+              id="fp4"
+              title="Forged workpiece"
+              src="./images/f2.png"
+              class="fp4 hide"
+            />
+            <img
+              id="off4"
+              title="Hydraulic press"
+              src="./images/OFF.png"
+              class="off4"
+            />
+          </div>
+          <div class="simsubscreen canvas5 hide" id="canvas5">
+            <div class="step-div">
+              <p id="pumptext" class="step-text">
+                <span id="titlestep" class="incanvas">STEP </span>
+                <span class="circlebg" id="stepnumber">5</span>Do the finishing
+                works.
+              </p>
+            </div>
+            <img
+              id="wp5"
+              title="Forged Workpiece"
+              src="./images/f2.png"
+              class="wp5"
+            />
+            <img
+              id="fp5"
+              title="Finished Workpiece"
+              src="./images/f3.png"
+              class="fp5 hide"
+            />
+            <img
+              id="gr5"
+              title="Grinder"
+              src="./images/grinder.png"
+              class="gr5"
+            />
+          </div>
+
+          <div class="nav">
+            <img id="prevButton" class="hide" src="images/bluebkdulls.svg" />
+            <img id="nextButton" src="images/bluebkwdulls.svg" />
+            <img id="reButton" class="hide" type="button" value="Reload Page"
+            onClick="document.location.reload(true);"
+            src="images/bluecwdull.svg" / >
+          </div>
+          <img
+            class=""
+            id="arrow1"
+            style="visibility: hidden"
+            src="images/arrow1.png"
+          />
+        </div>
+        <div class="footer">
+          <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

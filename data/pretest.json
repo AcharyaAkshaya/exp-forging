@@ -1,0 +1,69 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The important mechanical property for a material to be successfully rolled or forged is",
+      "answers": {
+        "a": "Malleability",
+        "b": "Brittleness",
+        "c": "Ductility",
+        "d": "Elasticity"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Coining is the operation of",
+      "answers": {
+        "a": "Hot Forging",
+        "b": "Cold Extrusion",
+        "c": "Piercing",
+        "d": "Cold Forging"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Cast iron is forgeable.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In forging process, metals are shaped by",
+      "answers": {
+        "a": "Cohesion",
+        "b": "Tension",
+        "c": "Impact",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    }
+  ]
+}

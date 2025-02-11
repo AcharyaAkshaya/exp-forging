@@ -1,0 +1,100 @@
+/* rem and em don not depend on html font size in media queries, Instead 1rem = 1em = 16px
+rem: root font size
+em:current font size
+*/
+
+/* *************only screen******* */
+
+/* **************************** */
+/* Below 1344px (Smaller Desktops) */
+/* **************************** */
+
+@media (max-width: 84em) {
+}
+
+/* **************************** */
+/* Below 1200px (Lanscape Tablets) */
+/* **************************** */
+
+@media (max-width: 75em) {
+  body {
+    width: 100%;
+    margin: unset;
+  }
+  .title-div h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* **************************** */
+/* Below 944px ( Tablets) */
+/* **************************** */
+
+@media (max-width: 59em) {
+  .title-div h1 {
+    font-size: 2rem;
+  }
+}
+
+/* **************************** */
+/* Below 820px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 48em) {
+}
+
+/* **************************** */
+/* Below 704px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 44em) {
+  .title-div {
+    gap: 0rem;
+    text-align: center;
+  }
+
+  .nav img {
+    width: 20%;
+    height: 100%;
+  }
+  .logo-div {
+    justify-self: left;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+    /* padding: 0.8rem 0 0.8rem 3.3rem; */
+  }
+}
+
+/* **************************** */
+/* Below 540px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 34em) {
+  .title-div-container {
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+  }
+  .container {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+  .title-div h1 {
+    padding: 0.2rem;
+
+    font-size: 1.6rem;
+    /* text-align: center; */
+  }
+}
+
+@media (max-width: 27em) {
+}
+
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
