@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     html += `<section><h2>Procedure</h2>${await loadMarkdown(
       "procedure.md"
     )}</section>`;
+    html += `<section><h2>Contributors</h2>${await loadMarkdown(
+      "contributors.md"
+    )}</section>`;
     html += `<section><h2>Pre-Test</h2>${await loadJSON(
       "pretest.json"
     )}</section>`;
