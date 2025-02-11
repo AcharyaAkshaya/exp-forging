@@ -45,8 +45,9 @@ jobs:
           publish_branch: gh-pages
           publish_dir: . # Deploy everything
 
-      - name: Merge testing into main
-        run: |
-          git checkout main || git checkout -b main origin/main
-          git merge origin/testing --no-edit || echo "No changes to merge"
-          git push origin main
+
+      # - name: Merge testing into main
+      #   run: |
+      #     git checkout main || git checkout -b main origin/main
+      #     git merge origin/testing --no-edit || echo "No changes to merge"
+      #     git push origin main
