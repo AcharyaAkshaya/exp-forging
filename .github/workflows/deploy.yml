@@ -15,9 +15,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Ensure full Git history
+          fetch-depth: 0 # Ensures full Git history
 
-      - name: Verify Git Repository
+      - name: Ensure Git Repository is Initialized
         run: |
           if [ ! -d .git ]; then
             echo "❌ Git repository not found. Initializing..."
@@ -25,8 +25,9 @@ jobs:
             git remote add origin https://github.com/AcharyaAkshaya/exp-forging.git
             git fetch origin
           fi
+          git branch -a
 
-      - name: Configure Git
+      - name: Configure Git User
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
